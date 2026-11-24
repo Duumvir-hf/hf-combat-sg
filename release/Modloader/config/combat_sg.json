@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "level": "Combat_SG.seria",
+  "verbose_logging": false,
+  "_comment_enabled": "false = the mod installs no hooks; strike-group battles keep using Combat.seria.",
+  "_comment_level": "Level loaded for a fleet-vs-fleet battle whose enemy side is a strike group. A bare *.seria name in Data/Levels/.",
+  "_comment_verbose_logging": "true = also log the enemy fleets' behaviour states for ordinary battles (Modloader/logs)."
+}

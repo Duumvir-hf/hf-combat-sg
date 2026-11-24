@@ -1,0 +1,20 @@
+[package]
+name = "hf-combat-sg"
+version = "1.0.2"
+edition = "2021"
+description = "Strike-group fleet battles load their own level (Combat_SG.seria) instead of Combat.seria, for HighFleet Steam 1.163."
+
+[lib]
+name = "hf_combat_sg"
+crate-type = ["cdylib"]
+
+[dependencies]
+highfleet-mod-api = { git = "https://github.com/logdot/Highfleet-Modloader.git", tag = "v4.0.0" }
+log = "0.4.28"
+patchy = { package = "patchy-rs", git = "https://github.com/logdot/patchy-rs.git", tag = "v0.1.0" }
+serde = { version = "1.0.221", features = ["derive"] }
+serde_json = "1.0.144"
+windows-sys = { version = "0.61", features = [
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+] }

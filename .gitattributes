@@ -1,0 +1,4 @@
+# Keep every released byte as-is: the config is include_str!'d into the tests,
+# Combat_SG.seria is loaded by the game verbatim, and the zip is an artefact
+# with a published sha256.
+* -text
